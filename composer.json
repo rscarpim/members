@@ -1,0 +1,11 @@
+{
+    "name": "chmhelp/member",
+    "require": {
+        "symfony/var-dumper": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    }
+}

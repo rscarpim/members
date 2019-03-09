@@ -1,0 +1,68 @@
+.center {
+  margin: auto;
+  width: 50%;
+  border: 1px solid grey;
+  padding: 10px;
+
+  position: relative;
+
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  border-radius: 2px;
+}
+
+.span-error {
+  color: red;
+  font-size: 12px;
+}
+
+.btnLogout {
+  float: right;
+  padding-right: 32px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btnDelete {
+  background-color: red;
+  color: white;
+  height: 32px;
+  width: 100px;
+}
+
+.btnSuccess {
+  background-color: green;
+  color: white;
+  height: 32px;
+  width: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: grey;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+
+.align-text {
+  text-align: left;
+}
