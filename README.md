@@ -4,7 +4,7 @@
 <h4><strong>Process to create the Database and the Stored Procedure</strong></h4>
 
 ```
- CREATE TABLE `tb_users` (<br/>
+ CREATE TABLE `tb_users` 
   `u_id` int(11) NOT NULL AUTO_INCREMENT,
   `u_user_name` varchar(255) DEFAULT NULL,
   `u_user_password` varchar(255) DEFAULT NULL,
@@ -18,7 +18,7 @@
 ```
 
 
-
+```
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_crud_users`(
 	IN pType				SMALLINT,
@@ -49,12 +49,12 @@ BEGIN
 	COMMIT;
 END$$
 DELIMITER ;
+```
 
-****************************************************************************
 Populating the Table
-
+```
 INSERT INTO tb_users (`u_user_name`, `u_user_password`, `u_user_first_name`, `u_user_last_name`, `u_user_email`, `u_user_created@`, `u_user_update@`, `u_user_level`)
 VALUES
 					 ('masteruser', '$2y$12$oqdNoiYV7mbH38MRo2qXHu.Bq5NbigOXBYO3V.Q2CvFqaPpukhr1C', 'master', 'user', 'master@master.com', NULL, NULL, '1');
-           
+ ```          
            
