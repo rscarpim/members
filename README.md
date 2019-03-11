@@ -73,12 +73,49 @@ END$$
 DELIMITER ;
 ```
 
-Populating the Table
+Populating the Table - This is The Master User.
+User Name : masteruser
+Password : 123456
 ```
-INSERT INTO tb_users (`u_user_name`, `u_user_password`, `u_user_first_name`, `u_user_last_name`, 
-`u_user_email`, `u_user_created@`, `u_user_update@`, `u_user_level`)
+INSERT INTO tb_users (`u_user_name`, 
+		      `u_user_password`, 
+		      `u_user_first_name`, 
+		      `u_user_last_name`, 
+		      `u_user_email`, 
+		      `u_user_created@`, 
+		      `u_user_update@`, 
+		      `u_user_level`)
 VALUES
-('masteruser', '$2y$12$oqdNoiYV7mbH38MRo2qXHu.Bq5NbigOXBYO3V.Q2CvFqaPpukhr1C', 
- 'master', 'user', 'master@master.com', NULL, NULL, '1');
- ```          
+		     ('masteruser', 
+		      '$2y$12$oqdNoiYV7mbH38MRo2qXHu.Bq5NbigOXBYO3V.Q2CvFqaPpukhr1C', 
+ 		      'master', 
+		      'user', 
+		      'master@master.com', 
+		      NULL, 
+		      NULL, 
+		      '1');
+ ``` 
+ 
+ Populating the Table - This is a Regular User.
+ User Name : regularuser.
+ Password : 123456
+ ```
+INSERT INTO tb_users (`u_user_name`, 
+		      `u_user_password`, 
+		      `u_user_first_name`, 
+		      `u_user_last_name`, 
+		      `u_user_email`, 
+		      `u_user_created@`, 
+		      `u_user_update@`, 
+		      `u_user_level`)
+VALUES
+		     ('regularuser', 
+		      '$2y$12$oqdNoiYV7mbH38MRo2qXHu.Bq5NbigOXBYO3V.Q2CvFqaPpukhr1C', 
+ 		      'regular', 
+		      'user', 
+		      'regular@regular.com', 
+		      NULL, 
+		      NULL, 
+		      '0');
+ ``` 
            
