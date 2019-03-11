@@ -3,6 +3,8 @@
 
 <h4><strong>Process to create the Database and the Stored Procedure</strong></h4>
 
+
+Creating the Table
 ```
  CREATE TABLE `tb_users` 
   `u_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -17,7 +19,7 @@
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 ```
 
-
+Creating de Stored Procedure CRUD
 ```
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_crud_users`(
@@ -52,6 +54,18 @@ BEGIN
 					  pUserLastName, 
 					  pUserEmail );
 			END;
+			/* EDIT*/
+			WHEN 2 THEN
+			BEGIN
+			
+				/*UPDATE tb_users SET();*/
+			END;
+			/* DELETE*/
+			WHEN 3 THEN
+			BEGIN
+				/*DELETE FROM tb_users WHERE  */
+			END;
+			
 		END CASE;
         
 	COMMIT;
