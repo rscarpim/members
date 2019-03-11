@@ -9,7 +9,7 @@ class Load{
 
         if(!file_exists($file)){
             
-            throw new \Exception("File Doen't exists: {$file}");
+            throw new \Exception("File Doesn't exists: {$file}");
         }
 
         return require $file;
