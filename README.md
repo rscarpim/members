@@ -21,12 +21,12 @@
 ```
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_crud_users`(
-	IN pType				SMALLINT,
+    IN pType				SMALLINT,
     IN pUserID				INT,
     IN pUserName			VARCHAR(255),
-    IN pUserPassword		VARCHAR(255),
-    IN pUserFirstName		VARCHAR(45),
-    IN pUserLastName		VARCHAR(45),
+    IN pUserPassword			VARCHAR(255),
+    IN pUserFirstName			VARCHAR(45),
+    IN pUserLastName			VARCHAR(45),
     IN pUserEMail		 	VARCHAR(255)
 )
 BEGIN
@@ -40,9 +40,17 @@ BEGIN
 			BEGIN
             
 				INSERT INTO tb_users 
-					( u_user_name, u_user_password, u_user_first_name, u_user_last_name, u_user_email )
+					( u_user_name, 
+					  u_user_password, 
+					  u_user_first_name, 
+					  u_user_last_name, 
+					  u_user_email )
 				VALUES
-					( pUserName, pUserPassword, pUserFirstName, pUserLastName, pUserEmail );
+					( pUserName, 
+					  pUserPassword, 
+					  pUserFirstName, 
+					  pUserLastName, 
+					  pUserEmail );
 			END;
 		END CASE;
         
