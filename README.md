@@ -53,8 +53,10 @@ DELIMITER ;
 
 Populating the Table
 ```
-INSERT INTO tb_users (`u_user_name`, `u_user_password`, `u_user_first_name`, `u_user_last_name`, `u_user_email`, `u_user_created@`, `u_user_update@`, `u_user_level`)
+INSERT INTO tb_users (`u_user_name`, `u_user_password`, `u_user_first_name`, `u_user_last_name`, 
+`u_user_email`, `u_user_created@`, `u_user_update@`, `u_user_level`)
 VALUES
-					 ('masteruser', '$2y$12$oqdNoiYV7mbH38MRo2qXHu.Bq5NbigOXBYO3V.Q2CvFqaPpukhr1C', 'master', 'user', 'master@master.com', NULL, NULL, '1');
+('masteruser', '$2y$12$oqdNoiYV7mbH38MRo2qXHu.Bq5NbigOXBYO3V.Q2CvFqaPpukhr1C', 
+ 'master', 'user', 'master@master.com', NULL, NULL, '1');
  ```          
            
