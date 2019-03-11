@@ -2,8 +2,8 @@
 <h3>Project to Login as an Administrator or a Regular User - PHP OO.</h3>
 
 <h4><strong>Process to create the Database and the Stored Procedure</strong></h4>
-****************************************************************************
 
+```
  CREATE TABLE `tb_users` (<br/>
   `u_id` int(11) NOT NULL AUTO_INCREMENT,
   `u_user_name` varchar(255) DEFAULT NULL,
@@ -15,7 +15,7 @@
   `u_user_update@` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`u_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-
+```
 
 
 
