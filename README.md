@@ -73,9 +73,9 @@ END$$
 DELIMITER ;
 ```
 
-Populating the Table - This is The Master User.
-User Name : masteruser
-Password : 123456
+Populating the Table - This is The Master User.<br/>
+User Name : masteruser<br/>
+Password : 123456<br/>
 ```
 INSERT INTO tb_users (`u_user_name`, 
 		      `u_user_password`, 
@@ -96,9 +96,9 @@ VALUES
 		      '1');
  ``` 
  
- Populating the Table - This is a Regular User.
- User Name : regularuser.
- Password : 123456
+ Populating the Table - This is a Regular User.<br/>
+ User Name : regularuser.<br/>
+ Password : 123456<br/>
  ```
 INSERT INTO tb_users (`u_user_name`, 
 		      `u_user_password`, 
